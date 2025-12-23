@@ -15,21 +15,27 @@
 <body>
     <div class="weatherapp">
  <header>
-    <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="Search" />
+    <form class="search-form">
+        <input type="search" placeholder="Enter a city..." required class="search-form-input" />
+        <input type="submit" value="Search" class="search-form-button"/>
     </form>
  </header>
  <main>
+    <div class="weather-data">
     <div>
-    <h1>Tokyo</h1>
-    <p>
+    <h1 class="weather-city">Tokyo</h1>
+    <p class="weather-details">
     Tuesday 16:50, cloudy
     <br>
-    Humidity: 55%, Wind: 3.13 km/h
+    Humidity: <strong> 55%</strong>, Wind: <strong>3.13 km/h</strong>
     </p>
     </div>
-    <div>☁️ 15°C </div>
+    <div class="container">
+     <div class="weather-icon">☁️</div> 
+     <div class="weather-temperature">15</div>
+     <div class="weather-degrees">°C</div> 
+    </div>
+    </div>
  </main>
  <footer>
     This project was coded by <a href="https://github.com/sere7na/">Serena</a>
