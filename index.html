@@ -15,15 +15,19 @@
 <body>
     <div class="weatherapp">
  <header>
-    <form class="search-form">
-        <input type="search" placeholder="Enter a city..." required class="search-form-input" />
-        <input type="submit" value="Search" class="search-form-button"/>
+    <form class="search-form" id="search-form">
+        <input type="search" 
+        placeholder="Enter a city..." 
+        required 
+        class="search-form-input" 
+        id="search-form-input"/>
+        <input type="submit" value="Search" class="search-form-button" /> 
     </form>
  </header>
  <main>
     <div class="weather-data">
     <div>
-    <h1 class="weather-city">Tokyo</h1>
+    <h1 class="weather-city" id="city">Tokyo</h1>
     <p class="weather-details">
     Tuesday 16:50, cloudy
     <br>
@@ -43,5 +47,6 @@
     and hosted on <a href="https://new-meteo-app.netlify.app/"> Netlify.</a>
  </footer>
    </div>
+<script src="src/app.js"></script>
 </body>
 </html>
