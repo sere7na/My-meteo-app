@@ -1,5 +1,5 @@
 body {
-    background-color: lightslategray;
+    background-color: rgb(132, 161, 190);
     font-family: "Inter", sans-serif;
 }
 
@@ -7,7 +7,7 @@ body {
     background-color: white;
     max-width: 600px;
     margin: 30px auto;
-    box-shadow: 0 30px 50px rgba (65, 50, 100, 0.08);
+    box-shadow: 0 30px 50px rgb(33, 69, 102);
     border-radius: 20px; 
     padding: 20px;
 }
@@ -17,21 +17,18 @@ header {
     padding: 0 0 30px 0;
 }
 
-a {
-
-}
-
 .search-form-input {
 background-color: #f9f7fe;
 border: none;
 border-radius: 14px;
 width: 80%;
 font-size: 16px;
+margin-top: 15px;
 padding: 15px 20px;
 }
 
 .search-form-button {
-background-color: rgb(105, 138, 170);
+background-color: rgb(64, 132, 199);
 margin-left: 5px;
 padding: 15px 25px;
 font-size: 16px;
