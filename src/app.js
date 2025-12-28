@@ -18,7 +18,11 @@ let date = new Date(response.data.time * 1000);
 let timeElement = document.querySelector("#time");
 timeElement.innerHTML = formatDay(date);
 
+let iconElement = document.querySelector("#icon");
+iconElement.innerHTML = `<img src= "${response.data.condition.icon_url}" class="weather-icon" />`;
+
 }
+
 function formatDay(date) {
 let days = ["Sunday","Monday","Tuesday","Wendsday","Thursday","Friday","Saturday"]; 
 let day = days[date.getDay()];
