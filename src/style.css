@@ -1,25 +1,26 @@
 body {
     background-color: rgb(132, 161, 190);
     font-family: "Inter", sans-serif;
+    margin: 0;
 }
 
 .weatherapp {
     background-color: white;
     max-width: 600px;
     margin: 30px auto;
-    box-shadow: 0 30px 50px rgb(33, 69, 102);
+    box-shadow: 0 30px 40px rgb(78, 125, 168);
     border-radius: 20px; 
     padding: 20px;
-    
 }
 
 header {
-    border-bottom: 1px solid #f9f7fe;
+    border-bottom: 1px solid  #f9f7fe;
     padding: 0 0 20px 0;
 }
 
 .search-form-input {
 background-color: #f9f7fe;
+box-shadow: 0 5px 10px rgb(217, 219, 221);
 border: none;
 border-radius: 14px;
 width: 80%;
@@ -30,6 +31,7 @@ padding: 15px 20px;
 
 .search-form-button {
 background-color: rgb(64, 132, 199);
+box-shadow: 0 5px 10px rgb(112, 158, 204);
 margin-left: 5px;
 padding: 15px 25px;
 font-size: 16px;
@@ -38,25 +40,41 @@ border-radius: 14px;
 color: white;
 }
 
-main {
-padding: 20px 0;
-
+.search-form-button: hover 
+{
+background: rgba(45, 97, 150, 1);
 }
+
+main {
+padding: 5px 0;
+}
+
 .weather-data {
  display: flex;
- justify-content: space-between;
+ justify-content: left; 
+ align-items: center;
+ position: relative;
+ width: 100%;
 }
 
+.left-container {
+    display: flex;
+    align-items: center;
+
+}
 .weather-city {
- margin: 0;
+margin-left: 20px;
+ margin-top: 20px;
  font-size: 38px;
  line-height: 48px;
 }
 
 .weather-details {
- font-size: 16px;
- line-height: 22px;
- color: rgba(0, 0, 0, 0.6);
+    margin-left: auto; 
+    text-align: right;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .weather-details strong {
@@ -65,36 +83,41 @@ padding: 20px 0;
 }
 
 .container {
-    display: flex;
+   display: flex;
+   align-items: center;
+   margin-top: -30px;
 }
 
 .weather-icon {
  width: 90px;
  height: 90px;
- margin-top: 10px;
+ margin-right: 5px;
 }
 
 .weather-temperature {
- font-size: 80px;
- margin-left: 5px;
- font-weight: bold;
+ margin-right: 15px;
+ font-size: 70px;
  
 }
 
 .weather-degrees {
-    margin-top: 16px;
+    margin-bottom: 20px;
+    margin-right: 0;
     font-size: 28px;
 }
 
 .forecast {
 display: flex;
 justify-content: space-around;
-margin-top: 30px;
+margin-top: 20px;
+margin-bottom: 20px;
+border-top: 1px solid #7f739e;
+padding-top: 30px;
 }
 
 .day-week {
 text-align: center;
-color: rgba(0, 0, 0, 0.6);
+color: rgba(0, 0, 0, 0.692);
 font-size: 16px;
 line-height: 15px;
 }
@@ -117,7 +140,7 @@ text-align: center;
 }
 
 footer {
-    border-top: 1px solid #f9f7fe;
+    border-top: 1px solid #7f739e;
     padding: 10px 0 0 0;
     text-align: center;
     font-size: 14px;

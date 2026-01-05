@@ -10,46 +10,48 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css">
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>My weather app</title>
-</head>
+<head>
 <body>
-    <div class="weatherapp">
-        <header>
-            <form class="search-form" id="search-form">
-                <input type="search" 
-                       placeholder="Enter a city..." 
-                       required 
-                       class="search-form-input" 
-                       id="search-form-input"/>
-                <input type="submit" value="Search" class="search-form-button" /> 
-            </form>
-        </header>
-        <main>
-            <div class="weather-data">
-                <div>
-                    <h1 class="weather-city" id="city"></h1>
-                    <p class="weather-details">
-                        <span id="time"></span> <span id="description"></span>
-                        <br>
-                        Humidity: <strong id="humidity"></strong>, 
-                        Wind: <strong id="wind-speed"></strong>
-                    </p>
-                </div>
-                <div class="container">
-                    <div id="icon"></div>
-                    <div class="weather-temperature" id="temperature"></div>
-                    <div class="weather-degrees">°C</div> 
-                </div>
+ <div class="weatherapp">
+    <header>
+        <h1 class="weather-city" id="city"></h1>
+        <form class="search-form" id="search-form">
+            <input type="search" 
+                   placeholder="Enter a city..." 
+                   required 
+                   class="search-form-input" 
+                   id="search-form-input"/>
+            <input type="submit" value="Search" class="search-form-button" /> 
+        </form>
+    </header>
+   <main>
+    <div class="weather-data">
+        <div class="left-container"> 
+            <div class="container">
+                <div id="icon"></div>
+                <div class="weather-temperature" id="temperature"></div>
+                <div class="weather-degrees">°C</div>
             </div>
-            <div class="forecast" id="forecast"></div>
-        </main>
+        </div>
+        <p class="weather-details"> 
+            <span id="time"></span> <span id="description"></span>
+            <br>
+            Humidity: <strong id="humidity"></strong>
+            <br>
+            Wind: <strong id="wind-speed"></strong>
+        </p>
+    </div>
+    <div class="forecast" id="forecast"></div>
+</main>
         <footer>
             This project was coded by <a href="https://github.com/sere7na/">Serena</a>
             and is on <a href="https://github.com/sere7na/My-meteo-app">GitHub</a>
             and hosted on <a href="https://new-meteo-app.netlify.app/">Netlify.</a>
         </footer>
-    </div>
-    <script src="src/app.js"></script>
+    
+<script src="src/app.js"></script>
 </body>
+</head>
 </html>
