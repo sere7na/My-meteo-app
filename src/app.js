@@ -1,3 +1,4 @@
+
 function updateCityData(response) {
     let temperatureElement = document.querySelector("#temperature");
     let temperature = response.data.temperature.current;
@@ -64,6 +65,10 @@ function getForecast(city) {
 }
 
 function displayForecast(response) {
+    let forecastElement = document.querySelector("#forecast");
+    let forecastHtml = "";
+
+    function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecastHtml = "";
 
@@ -92,9 +97,7 @@ function displayForecast(response) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", function(event) {
     event.preventDefault(); 
-    let cityInput = document.querySelector("#search-form-input"); // Get the input value
+    let cityInput = document.querySelector("#search-form-input"); 
     searchCity(cityInput.value);  
 });
-
-
 searchCity("Tokyo");
