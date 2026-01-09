@@ -46,9 +46,10 @@ background: rgba(45, 97, 150, 1);
 }
 
 .weather-city {
+color: blueviolet;
 margin-bottom: 10px; 
-margin-left: 20px;
- font-size: 38px;
+margin-left: 10px;
+ font-size: 40px;
  line-height: 48px;
 }
 
