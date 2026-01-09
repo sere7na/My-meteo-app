@@ -95,7 +95,7 @@ padding: 5px 0;
 }
 
 .weather-temperature {
- margin-right: 15px;
+ margin-right: 5px;
  font-size: 70px;
  
 }
@@ -112,6 +112,7 @@ justify-content: space-around;
 margin-top: 20px;
 border-top: 2px solid #7f739e;
 padding-top: 30px;
+padding-bottom: 15px;
 }
 
 .day-week {
